@@ -24,8 +24,8 @@ This is a simple project in which a card component appears centered in the page.
 
 ### Links
 
-- [Solution on Frontend Mentor]()
-- [Live Site on GitHub Pages]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-with-accessible-contrast-custom-properties-and-bem-2GjmOiiZSm)
+- [Live Site on GitHub Pages](https://juliocinquina.github.io/fem-qr-code-component/)
 
 ## My process
 
