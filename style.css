@@ -1,0 +1,77 @@
+:root {
+  box-sizing: border-box;
+
+  /* Colors: backgrounds, text and links */
+  --bg-page: hsl(212, 45%, 89%);
+  --bg-card: hsl(0, 0%, 100%);
+  --clr-card-title: hsl(218, 44%, 22%);
+  /* --clr-card-text: hsl(220, 15%, 55%); -- not enough contrast with white background */
+  --clr-card-text: hsl(220, 15%, 49%);
+  --clr-attribution-link: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--bg-page);
+  font-family: "Outfit", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  /* Centers main section vertically in the flex container */
+  margin-block: auto;
+}
+
+.card {
+  /* Prevents card from occupying the entire viewport width on small screens */
+  max-width: min(80%, 300px);
+
+  /* Centers card horizontally */
+  margin-inline: auto;
+
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.card__img {
+  max-width: 100%;
+  border-radius: 0.55rem;
+}
+
+.card__body {
+  padding: 0.25rem;
+}
+
+.card__title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--clr-card-title);
+}
+
+.card__text {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--clr-card-text);
+}
+
+.attribution {
+  padding-block-start: 1rem;
+  padding-block-end: 0.25rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-attribution-link);
+}
